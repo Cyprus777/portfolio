@@ -1,0 +1,580 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wdth,wght@0,75..100,300;1,75..100,300&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* чтобы прокрутка была плавная - достаточно добавить */
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 100px;
+}
+
+
+/* убрать полосу прокрутки */
+/* body { overflow: hidden; } */
+
+
+* {
+    box-sizing: border-box;
+}
+
+button:hover {
+    background-color: #f8e5ae;
+}
+
+button:active {
+    background-color: #ebc34b;
+}
+
+a {
+    color: #fff;
+    transition: 0.5s;
+}
+
+a:hover {
+    color: #f8e5ae;
+}
+
+a:active {
+    color: #ebc34b;
+}
+
+
+/* ================================== Вертска HEADER ==================================== */
+
+header {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    background: #07203F;
+    outline: 1px solid #fff;
+    z-index: 1;
+}
+
+.container {
+    max-width: 1181px;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 55px 0;
+}
+
+.header_nickName {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    color: #fff;
+    text-align: center;
+    line-height: 43.88px;
+
+    max-width: 300px;
+    min-height: 44px;
+    margin-right: 30px;
+    word-break: break-all;
+}
+
+.header_nav {
+    display: flex;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 36px;
+    color: #fff;
+    text-align: right;
+    text-decoration: underline;
+    text-transform: uppercase;
+    gap: 40px;
+    line-height: 43.57px;
+}
+
+
+.header_nav_item {
+    max-width: 234.04px;
+    word-break: break-all;
+}
+
+
+/* ============================= Вертска MAIN ============================ */
+
+/* ============================= Верстка SECTION_1 ======================= */
+
+.about_me_general {
+    background: #07203F;
+    margin-top: 154px;
+}
+
+.about_me {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 135px;
+    padding-bottom: 150px;
+}
+
+.skills_heading {
+    word-break: break-all;
+}
+
+.about_me_heading {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 800;
+    font-size: 64px;
+    color: #D9D9D9;
+    text-align: center;
+    line-height: 78.02px;
+
+    max-width: 605px;
+    min-height: 78px;
+    margin-bottom: 50px;
+    word-break: break-all;
+
+}
+
+.about_me_text {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 36px;
+    color: #D9D9D9;
+    text-align: left;
+    line-height: 42.19px;
+
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    max-width: 605px;
+    min-height: 209px;
+    margin-bottom: 48px;
+    word-break: break-all;
+
+}
+
+.contact_me {
+    flex-grow: 1;
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    color: #000;
+    text-align: center;
+    line-height: 48.41px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+
+    width: 100%;
+    max-width: 605px;
+    border: 1px solid #000;
+    border-radius: 50px;
+    background: #D9D9D9;
+    padding: 28.12px 10px;
+    word-break: break-all;
+    transition: 0.5s;
+}
+
+.foto_about_me {
+    position: relative;
+    width: 516px;
+    height: 516px;
+    border-radius: 50%;
+}
+
+.img_me {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    /* object-fit: cover; */
+}
+
+/* ============================= Верстка SECTION_2 ======================= */
+
+.skills_general {
+    background: no-repeat center/200% url(./picture/dunes.jpeg);
+}
+
+.skills {
+    padding-top: 135px;
+    padding-bottom: 150px;
+}
+
+.skills_heading {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 800;
+    font-size: 72px;
+    line-height: 87.77px;
+    text-align: center;
+    color: #333333;
+    margin-bottom: 70px;
+    min-height: 91px;
+}
+
+.list_skills {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.item_skills {
+    width: 350px;
+    min-width: 350px;
+}
+
+.item_skills__img {
+    position: relative;
+    padding: 111.505px 0px;
+}
+
+.img__item_skills {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.text {
+    width: 100%;
+    background: #1c4a83;
+    min-height: 127px;
+    padding: 20px 10px;
+    border-top: 5px solid #D9D9D9;
+
+    font-family: "Montserrat", sans-serif;
+    font-weight: 800;
+    font-size: 64px;
+    line-height: 78.02px;
+    text-align: center;
+    color: #ffff;
+    word-break: break-all;
+}
+
+/* ============================= Верстка SECTION_3 ======================= */
+.my_project_general {
+    background: #07203F;
+}
+
+.my_project {
+    padding-top: 135px;
+    padding-bottom: 150px;
+}
+
+.my_project_heading {
+    min-height: 91.6px;
+    margin-bottom: 70.4px;
+
+
+    font-family: "Montserrat", sans-serif;
+    font-weight: 800;
+    font-size: 72px;
+    line-height: 87.77px;
+    text-align: center;
+    color: #ffff;
+    word-break: break-all;
+}
+
+.item_me_project {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    gap: 111px;
+
+    color: white;
+    margin-bottom: 115px;
+    word-break: break-all;
+}
+
+.item_me_project:nth-child(2) {
+    flex-direction: row-reverse;
+}
+
+
+.item_me_project:last-child {
+    margin-bottom: 0;
+}
+
+.site {
+    position: relative;
+    width: 540px;
+    /* padding: 15.927% 0; */
+    padding-top: calc(2*15.927%);
+    /* padding: 15.927% 23.499%; */
+}
+
+
+.img_site {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.item_me_project_text {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 42.19px;
+    text-align: start;
+    color: #D9D9D9;
+    max-width: 451px;
+}
+
+.item_me_project_text_h2 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 58.51px;
+    text-align: start;
+    color: #D9D9D9;
+
+    min-height: 78px;
+    /* word-break: break-all;
+    width: 100%; */
+}
+
+/* ============================= Верстка SECTION_4 ======================= */
+
+.application__form {
+    background: #EADED4;
+}
+
+.application__form-general {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 135px 0 150px;
+
+}
+
+.application__form__heading {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 800;
+    font-size: 72px;
+    line-height: 87.77px;
+    text-align: start;
+    color: #000000;
+    text-transform: uppercase;
+    word-break: break-all;
+
+    max-width: 759px;
+    margin-bottom: 70px;
+
+}
+
+.form {
+    width: 759px;
+    height: 662px;
+    padding: 77px 63px;
+    background: #fff;
+}
+
+
+.label__input__general {
+    position: relative;
+}
+
+label {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 20px;
+    display: block;
+    /* margin-bottom: 10px; */
+    z-index: 1;
+}
+
+.info {
+
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19.5px;
+    text-align: start;
+    color: #000000;
+    /* text-transform: uppercase; */
+    /* word-break: break-all; */
+
+    min-height: 98px;
+    width: 100%;
+    margin-bottom: 38px;
+    /* padding: 15px; */
+    background: #EADED459;
+    outline: 5px solid #EADED459;
+}
+
+.info__last {
+    margin-bottom: 0;
+}
+
+input {
+    font-size: 20px;
+
+    padding: 10px;
+    text-align: left;
+    height: 98px;
+    width: 100%;
+}
+
+input::placeholder {
+    color: #cfc6c6;
+}
+
+.button__general {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 69px;
+    word-break: break-all;
+}
+
+.button__form {
+    width: 266px;
+    min-height: 68px;
+    background: #EADED4CC;
+
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 43.88px;
+    text-align: center;
+    color: #000000;
+
+}
+
+
+/* ============================= Верстка SECTION_5 ======================= */
+
+.contacts_general {
+    background: no-repeat center/200% url(./picture/background.jpeg);
+}
+
+.contacts {
+    padding-top: 135px;
+    padding-bottom: 181px;
+}
+
+.contacts_heading {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 800;
+    font-size: 72px;
+    line-height: 87.77px;
+    text-align: center;
+    color: #d1cece;
+    text-transform: uppercase;
+    word-break: break-all;
+
+    margin-bottom: 65px;
+    min-height: 91px;
+}
+
+.list_contacts {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.item_contacts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    min-height: 350px;
+    background: #07203F;
+}
+
+.contact {
+    background: #D9AA90;
+}
+
+.item_contacts1 {
+    width: 100%;
+    min-height: 63px;
+    margin-bottom: 22px;
+
+    font-family: "Montserrat", sans-serif;
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 58.51px;
+    text-align: center;
+    color: #ffff;
+    text-transform: uppercase;
+    word-break: break-all;
+}
+
+
+.button__text {
+    width: 298.9px;
+    background: #cddced;
+    min-height: 69.3px;
+    padding: 14px 10px;
+    border-radius: 50px;
+
+    font-family: "Montserrat", sans-serif;
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 48.76px;
+    text-align: center;
+    color: #000000;
+    word-break: break-all;
+    text-transform: uppercase;
+}
+
+.link {
+    color: #000;
+}
+
+.link:hover {
+    color: #000;
+}
+
+/* ============================= Верстка FOOTER ======================= */
+footer {
+    background: #07203F;
+    outline: 1px solid #fff;
+}
+
+.container {
+    max-width: 1181px;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 55px 0;
+}
+
+.footer_nickName {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    color: #fff;
+    text-align: center;
+    line-height: 43.88px;
+
+    max-width: 300px;
+    min-height: 44px;
+    margin-right: 30px;
+    word-break: break-all;
+}
+
+.footer_nav {
+    display: flex;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 36px;
+    color: #fff;
+    text-align: right;
+    text-decoration: underline;
+    text-transform: uppercase;
+    gap: 40px;
+    line-height: 43.57px;
+}
+
+
+.footer_nav_item {
+    max-width: 234.04px;
+    word-break: break-all;
+}

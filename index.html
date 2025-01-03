@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>День 9. Начинаем верстать</title>
+</head>
+
+
+<!-- 
+
+
+## Свойство дня
+
+Сегодня свойство дня - `text-transform`.
+
+`text-transform` - это свойство, изменяющее регистр шрифта.
+
+Свойство используется, если нам всегда нужно записывать в одном и том же регистре, однако при изменении контента могут записать иначе. Во избежание ошибок используют свойство `text-transform`.
+
+Признак наследования: наследуется.
+
+Синтаксис: `text-transform: значение;`
+
+Значения `text-transform:`
+
+- Каждая первая буква заглавная: `text-transform: capitalize;`
+- Все буквы заглавные: `text-transform: uppercase;`
+- Все буквы строчные: `text-transform: lowercase;`
+- Исходный регистр: `text-transform: none;`
+-->
+
+
+
+<body>
+    <header>
+        <div class="container">
+            <div class="header">
+                <div class="header_nickName">@FeniksZero</div>
+                <nav>
+                    <ul class="header_nav">
+                        <li class="header_nav_item">
+                            <a href="#my_project">мои работы</a>
+                        </li>
+                        <li class="header_nav_item">
+                            <a href="#about_me">обо мне</a>
+                        </li>
+                        <li class="header_nav_item">
+                            <a href="#contacts">контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main>
+
+        <section class="about_me_general" id="about_me">
+            <div class="container">
+                <div class="about_me">
+                    <ul class="list_about_me">
+                        <li>
+                            <h2 class="about_me_heading">
+                                Я - ФРОНТЕНДЕР
+                            </h2>
+                        </li>
+                        <li>
+                            <div class="about_me_text">
+                                <p class="about_me_text-alignment"> Какая-то очень интересная информация обо мне. Очень
+                                    интересная информация...</p>
+                            </div>
+                        </li>
+
+                        <li>
+                            <button type="submit" class="contact_me">
+                                <a href="https://github.com/Cyprus777" target="_blank" class="link">связаться со мной</a>
+                            </button>
+                        </li>
+                    </ul>
+                    <div class="foto_about_me">
+
+                        <img src="./picture/foto_dev.jpg" alt="" class="img_me">
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="skills_general">
+            <div class="container">
+                <div class="skills">
+                    <ul class="list_skills_general">
+                        <li>
+                            <h2 class="skills_heading">
+                                Я - УМЕЮ
+                            </h2>
+                            <ul class="list_skills">
+                                <li class="item_skills">
+                                    <div class="item_skills__img">
+                                        <img src="./picture/html.jpeg" alt="" class="img__item_skills">
+                                    </div>
+                                    <p class="text">HTML</p>
+                                </li>
+                                <li class="item_skills">
+                                    <div class="item_skills__img">
+                                        <img src="./picture/css.jpeg" alt="" class="img__item_skills">
+                                    </div>
+                                    <p class="text">CSS</p>
+                                </li>
+                                <li class="item_skills">
+                                    <div class="item_skills__img">
+                                        <img src="./picture/js.webp" alt="" class="img__item_skills">
+                                    </div>
+                                    <p class="text">JS</p>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </section>
+        <section class="my_project_general" id="my_project">
+            <div class="container">
+                <div class="my_project">
+                    <h2 class="my_project_heading">
+                        Мои проекты
+                    </h2>
+                    <ul class="list_my_project">
+                        <li class="item_me_project">
+                            <div class="site">
+                                <img src="./picture/site1.png" alt="" class="img_site">
+                            </div>
+                            <div class="item_me_project_text">
+                                <h2 class="item_me_project_text_h2">Работа 1</h2>
+                                <p class="description">Далеко-далеко за словесными горами в стране гласных и согласных
+                                    живут</p>
+                            </div>
+                        </li>
+                        <li class="item_me_project">
+                            <div class="site">
+                                <img src="./picture/site2.png" alt="" class="img_site">
+                            </div>
+                            <div class="item_me_project_text">
+                                <h2 class="item_me_project_text_h2">Работа 2</h2>
+                                <p class="description">Далеко-далеко за словесными горами в стране гласных и согласных
+                                    живут</p>
+                            </div>
+                        </li>
+                        <li class="item_me_project">
+                            <div class="site">
+                                <img src="./picture/site3.jpeg" alt="" class="img_site">
+                            </div>
+                            <div class="item_me_project_text">
+                                <h2 class="item_me_project_text_h2">Работа 3</h2>
+                                <p class="description">Далеко-далеко за словесными горами в стране гласных и согласных
+                                    живут
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="application__form">
+            <div class="container">
+                <div class="application__form-general">
+                    <h2 class="application__form__heading">Оставьте заявку</h2>
+                    <form action="" method="post" class="form">
+                        <div class="label__input__general">
+                            <label for="name">Ваше имя</label>
+                            <p class="info">
+                                <input type="text" name="name" id="name" required placeholder="Иванов Иван Иванович">
+                            </p>
+                        </div>
+                        <div class="label__input__general">
+                            <label for="post">Ваша почта</label>
+                            <p class="info">
+                                <input type="text" name="post" id="post" required placeholder="example@mail.com">
+                            </p>
+                        </div>
+                        <div class="label__input__general">
+                            <label for="phone-number">Ваш телефон</label>
+                            <p class="info info__last">
+                                <input type="text" name="phone-number" id="phone-number" required
+                                    placeholder="+X(XXX)XXX-XX-XX">
+                            </p>
+                        </div>
+                        <div class="button__general">
+                            <button type="reset" class="button__form">Очистить </button>
+                            <button type="submit" class="button__form">Отправить </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <section class="contacts_general" id="contacts">
+            <div class="container">
+                <div class="contacts">
+                    <ul class="list_contacts_general">
+                        <li>
+                            <h2 class="contacts_heading">
+                                контакты
+                            </h2>
+                            <ul class="list_contacts">
+                                <li class="item_contacts">
+                                    <p class="item_contacts1">
+                                        GitHub
+                                    </p>
+                                    <button type="button" class="button__text">
+                                        <a href="https://github.com/Cyprus777" class="link" target="_blank">ссылка</a>
+                                    </button>
+                                </li>
+                                <li class="item_contacts contact">
+                                    <p class="item_contacts1">
+                                        telegram
+                                    </p>
+                                    <button type="button" class="button__text">
+                                        <a href="#" class="link" target="_blank">ссылка</a></button>
+                                </li>
+                                <li class="item_contacts">
+                                    <p class="item_contacts1">
+                                        LinkedIn
+                                    </p>
+                                    <button type="button" class="button__text">
+                                        <a href="#" class="link" target="_blank">ссылка</a></button>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="footer">
+                <div class="footer_nickName">@FeniksZero</div>
+                <nav>
+                    <ul class="footer_nav">
+                        <li class="footer_nav_item">
+                            <a href="#about_me">обо мне</a>
+                        </li>
+                        <li class="footer_nav_item">
+                            <a href="#my_project">мои работы</a>
+                        </li>
+                        <li class="footer_nav_item">
+                            <a href="#contacts">контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
